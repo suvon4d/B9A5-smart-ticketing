@@ -23,23 +23,12 @@ function setParseInt(event,value){
 }
 
 
-
-function appendElement(event){
-    const myDiv = document.getElementById(event);
-
-    const div = document.createElement('div');
-    div.classList.add('flex', 'justify-between', 'space-x-10')
-
-    const p1 = document.createElement('p');
-    p1.setAttribute('id','selectSearText')
-    const p2 = document.createElement('p');
-    p2.innerText = 'Economoy';
-    const p3 = document.createElement('p');
-    p3.innerText = '550';
-
-    div.append(p1)
-    div.append(p2)
-    div.append(p3)
+function showFromButton(eventId, buttonId){
+    const fromButton = document.getElementById(buttonId);
+    const event = document.getElementById(eventId);
+    const eventValue = event.value.trim();
     
-    myDiv.append(div)
+    if(!isNaN(eventValue)){
+     fromButton.classList.remove('hidden');
+    }
 }
