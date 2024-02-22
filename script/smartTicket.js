@@ -57,8 +57,9 @@ for( btn of allBtn){
          setParseInt('totalPrice', totalPrice)
         //  grand total
         setParseInt('grandtotal', totalPrice)
-       }     
-       
+       }else{
+                alert("You can't  bye more ticket")
+       }
   });      
     
   
