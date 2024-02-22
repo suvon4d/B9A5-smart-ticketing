@@ -31,4 +31,7 @@ function showFromButton(eventId, buttonId){
     if(!isNaN(eventValue)){
      fromButton.classList.remove('hidden');
     }
+    else{
+        fromButton.classList.add('hidden');  
+    }
 }
