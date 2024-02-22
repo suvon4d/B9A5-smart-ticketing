@@ -54,12 +54,12 @@
                 <span class="text-primary">P.H Paribahan</span></h1>
               <p class="">Track your consignment with P.H Parivahan tracking system with the help of consignment number as provided with the fast Tracking option.
               </p>
-              <button class="btn bg-[#1DD100] text-lg font-bold">Buy Tickets</button>
+              <button id="scrol" class="btn bg-[#1DD100] text-lg font-bold" onclick="goDown()" >Buy Tickets</button>
             </div>
           </div>
         </div>
 
-    </header>
+    </header>     
     <main>
       <!-- Offer section.... -->
      <section class="offer-section md:container md:mx-auto text-center  my-24 space-y-20  p-4 lg:p-0">
@@ -101,7 +101,7 @@
       <button class="btn btn-outline text-[#1DD100] text-lg font-bold">See All Offers</button>
      </section>
        <!-- Ticket section...-->
-       <section class="bg-[#F7F8F8] border-t-4 border-[#1DD100]  rounded-t-[100px] text-center pt-28  space-y-10 p-4 lg:p-0">
+       <section id="ticketSection" class="bg-[#F7F8F8] border-t-4 border-[#1DD100]  rounded-t-[100px] text-center pt-28  space-y-10 p-4 lg:p-0">
         <h3 class="text-5xl font font-black">P.H Paribahan</h3>
         <p class="text-xl font-semibold"> Traveling to places through P.H Paribahan Private Limited is always affordable, convenient and satisfactory. <br> One of the finest bus operating services. The travel experience was awesome.</p>
 
@@ -113,7 +113,7 @@
                 <p class="text-sm lg:text-xl">Coach-009-WEB ! AC_Business</p>
               </div>
               <div class="p-4 text-primary font-inter bg-lime-200	rounded-xl h-14 ">
-                <span class=" flex gap-2"><img src="images/seat-green.png" alt=""> <p> 40 Seats left</p></span>
+                <div class=" flex gap-2"><img src="images/seat-green.png" alt=""> <p> <span id="totalSeat">32</span> Seats left</p></div>
               </div>
             </div>
 
@@ -165,66 +165,66 @@
             <!-- A Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>A</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>A1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-5"><p>A2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-5"><p>A3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>A4</p></div>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6">A1</button>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-5">A2</button>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-5">A3</button>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6">A4</button>
             </div>
             <!-- B Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>B</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>B1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>B2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>B3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>B4</p></div>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">B1</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">B2</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">B3</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">B4</button>
             </div>
             <!-- C Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>C</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>C1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>C2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>C3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>C4</p></div>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">C1</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">C2</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">C3</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">C4</button>
             </div>
             <!-- D Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>D</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>D1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>D2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>D3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>D4</p></div>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">D1</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">D2</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">D3</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">D4</button>
             </div>
             <!-- E Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>E</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>E1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>E2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>E3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>E4</p></div>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">E1</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">E2</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">E3</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">E4</button>
             </div>
             <!-- F Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>F</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>F1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>F2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>F3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>F4</p></div>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6">F1</button>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">F2</button>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">F3</button>
+              <button class=" seat flex-1 bg-[#dbd4d4] rounded-xl p-6">F4</button>
             </div>
             <!-- G Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>G</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>G1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>G2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>G3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>G4</p></div>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">G1</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">G2</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">G3</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">G4</button>
             </div>
             <!-- H Seat -->
            <div class=" flex flex-1 gap-4 lg:gap-16 text-lg font-semibold font-inter justify-between items-center py-6 lg:p-8">
               <P>H</P>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>H1</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6"><p>H2</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6"><p>H3</p></div>
-              <div class="flex-1 bg-[#dbd4d4] rounded-xl p-6"><p>H4</p></div>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">H1</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 mr-6">H2</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6 ml-6">H3</button>
+              <button class="seat flex-1 bg-[#dbd4d4] rounded-xl p-6">H4</button>
             </div>
            
          </div>
@@ -234,31 +234,27 @@
           <div class="p-8 pr-5 font-inter space-y-9">
             <div class="bg-[#F7F8F8] rounded-3xl p-8 space-y-9 ">
               <div class="flex justify-between">
-                <p class="text-lg font-medium">Seat <span>0</span></p>
+                <p class="text-lg font-medium">Seat <span id="selectSeat">0</span></p>
                 <p class="text-lg font-medium">Class</p>
                 <p class="text-lg font-medium">Price</p>
                
               </div>
                <hr class=" border-gray-500 border-dashed">
               
-              <div class="space-y-9">
-                <div class="flex justify-between space-x-10">
-                  <p>C2</p>
+              <div id="myDiv" class="space-y-9">
+                <!--  <div class="flex justify-between space-x-10">
+                  <p>SEAT</p>
                   <p>Economoy</p>
                   <p>550</p>
-                </div>
-                <div class="flex justify-between space-x-10">
-                  <p>C2</p>
-                  <p>Economoy</p>
-                  <p>550</p>
-                </div>
+                </div> -->
+                 
                
               </div>
                <hr class=" border-gray-500">
 
                <div class="flex justify-between">
                 <p class="text-lg font-medium">Total Price</p>
-                <p class="text-lg font-medium">BDT <span>0</span></p>
+                <p class="text-lg font-medium">BDT <span id="">0</span></p>
               </div>
               <div class="flex justify-between bg-white rounded-xl p-2">
                 <input type="text" placeholder="Have any copupon?">
@@ -288,5 +284,7 @@
     <footer>
       
     </footer>
+   <script src="script/smartTicket.js"></script>
+   <script src="script/common.js"></script> 
 </body>
 </html>
